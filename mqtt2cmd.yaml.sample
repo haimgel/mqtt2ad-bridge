@@ -1,0 +1,19 @@
+app-id: 'mqtt2ad-bridge'
+mqtt:
+  broker: "tcp://mqtt.hostname.com:1883"
+switches:
+  - name: "network-access-arie"
+    refresh: "30m"
+    turn_on: '/app/ad-command.sh add "Network Access" "Devices-Arie"'
+    turn_off: '/app/ad-command.sh remove "Network Access" "Devices-Arie"'
+    get_state: '/app/ad-command.sh check "Network Access" "Devices-Arie"'
+  - name: "network-access-benjie"
+    refresh: "30m"
+    turn_on: '/app/ad-command.sh add "Network Access" "Devices-Benjie"'
+    turn_off: '/app/ad-command.sh remove "Network Access" "Devices-Benjie"'
+    get_state: '/app/ad-command.sh check "Network Access" "Devices-Benjie"'
+  - name: "network-access-daniel"
+    refresh: "30m"
+    turn_on: '/app/ad-command.sh add "Network Access" "Devices-Daniel"'
+    turn_off: '/app/ad-command.sh remove "Network Access" "Devices-Daniel"'
+    get_state: '/app/ad-command.sh check "Network Access" "Devices-Daniel"'
