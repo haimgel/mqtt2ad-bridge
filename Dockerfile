@@ -1,4 +1,4 @@
-FROM ghcr.io/haimgel/mqtt2cmd:v0.1.4 AS mqtt2cmd
+FROM ghcr.io/haimgel/mqtt2cmd:v0.1.5 AS mqtt2cmd
 
 FROM alpine:3.17
 
