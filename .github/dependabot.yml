@@ -16,6 +16,10 @@ updates:
       default-days: 7
     labels:
       - "dependencies"
+    groups:
+      docker:
+        patterns:
+          - "*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
@@ -30,3 +34,7 @@ updates:
       prefix: "ci"
     labels:
       - "dependencies"
+    groups:
+      github-actions:
+        patterns:
+          - "*"
