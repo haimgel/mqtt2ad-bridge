@@ -1,6 +1,6 @@
 FROM ghcr.io/haimgel/mqtt2cmd:v0.2.0 AS mqtt2cmd
 
-FROM alpine:3.22.1
+FROM alpine:3.23.4
 
 COPY --from=mqtt2cmd /usr/local/bin/mqtt2cmd /usr/local/bin/mqtt2cmd
 
